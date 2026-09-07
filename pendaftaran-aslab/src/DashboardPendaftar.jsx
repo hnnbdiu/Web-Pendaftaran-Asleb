@@ -56,7 +56,7 @@ export default function DashboardPendaftar() {
                             <h2 style={gaya.judulSambutan}>Profil Akademik</h2>
                             <p style={gaya.deskripsiSambutan}>Kelola data pribadi dan pantau status awal pendaftaran Anda.</p>
                         </section>
-                        <div style={gaya.gridInfo}>
+                        <div style={gaya.gridInfo} className="responsive-grid">
                             <article style={gaya.kartuInfo}>
                                 <h3 style={gaya.judulKartu}>Status Pendaftaran</h3>
                                 <div style={gaya.statusWadah}>
@@ -120,7 +120,7 @@ export default function DashboardPendaftar() {
                     <article style={gaya.kartuInfoUtama}>
                         <h3 style={gaya.judulKartu}>Hasil Seleksi Akhir</h3>
                         <p style={gaya.teksDetail}>Berikut adalah akumulasi nilai dari seluruh tahapan seleksi yang telah Anda selesaikan.</p>
-                        <div style={gaya.gridInfo}>
+                        <div style={gaya.gridInfo} className="responsive-grid">
                             <div style={gaya.kotakNilai}>
                                 <span style={gaya.labelInfo}>Nilai Ujian Tulis</span>
                                 <h4 style={gaya.angkaNilai}>{dataLengkap.nilai_tulis || 0}</h4>
@@ -166,8 +166,8 @@ export default function DashboardPendaftar() {
     };
 
     return (
-        <div style={gaya.tataLetak}>
-            <aside style={gaya.sidebar}>
+        <div style={gaya.tataLetak} className="responsive-layout">
+            <aside style={gaya.sidebar} className="responsive-sidebar">
                 <div style={gaya.headerSidebar}>
                     <h1 style={gaya.logo}>Portal Seleksi</h1>
                     <span style={gaya.subtitleLogo}>Lab Hardware & Jaringan</span>
@@ -188,7 +188,7 @@ export default function DashboardPendaftar() {
             </aside>
 
             <main style={gaya.areaKonten}>
-                <div style={gaya.pembungkusKonten}>
+                <div style={gaya.pembungkusKonten} className="responsive-content-wrapper">
                     {renderKonten()}
                 </div>
             </main>

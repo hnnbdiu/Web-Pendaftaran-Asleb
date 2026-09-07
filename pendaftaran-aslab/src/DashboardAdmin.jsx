@@ -188,7 +188,7 @@ export default function DashboardAdmin() {
                                 </select>
                             </div>
 
-                            <div style={gaya.gridInput}>
+                            <div style={gaya.gridInput} className="responsive-grid">
                                 <div style={gaya.grupInput}>
                                     <label style={gaya.labelInfo}>Nilai Ujian Tulis (0-100)</label>
                                     <input type="number" name="nilai_tulis" min="0" max="100" style={gaya.input} value={formPenilaian.nilai_tulis} onChange={tanganiPerubahanForm} required />
@@ -224,8 +224,8 @@ export default function DashboardAdmin() {
     };
 
     return (
-        <div style={gaya.tataLetak}>
-            <aside style={gaya.sidebar}>
+        <div style={gaya.tataLetak} className="responsive-layout">
+            <aside style={gaya.sidebar} className="responsive-sidebar">
                 <div style={gaya.headerSidebar}>
                     <h1 style={gaya.logo}>Portal Admin</h1>
                     <span style={gaya.subtitleLogo}>Evaluator Asisten Lab</span>
@@ -243,7 +243,7 @@ export default function DashboardAdmin() {
             </aside>
 
             <main style={gaya.areaKonten}>
-                <div style={gaya.pembungkusKonten}>
+                <div style={gaya.pembungkusKonten} className="responsive-content-wrapper">
                     <section style={gaya.kartuSambutan}>
                         <h2 style={gaya.judulSambutan}>Panel Penguji Seleksi</h2>
                         <p style={gaya.deskripsiSambutan}>Tinjau data pendaftar, kelola nilai ujian, dan tetapkan hasil akhir kelulusan asisten laboratorium.</p>

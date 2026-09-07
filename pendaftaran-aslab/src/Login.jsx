@@ -138,7 +138,10 @@ export default function Login() {
     if (tahapLanjutanGoogle) {
         return (
             <div style={gaya.latarBelakang}>
-                <div style={gaya.kartu}>
+                <div style={gaya.kartu} className="responsive-login-card">
+                    <h1 className="text-2xl font-bold text-center mb-4">
+                        Pendaftaran Asisten Laboratorium
+                    </h1>
                     <h2 style={gaya.judul}>Selesaikan Pendaftaran</h2>
                     <p style={gaya.subjudul}>Data dasar ditarik dari Google. Lengkapi data akademik Anda ke database cloud.</p>
                     <form onSubmit={tanganiSimpanDataGoogle} style={gaya.formulir}>
@@ -171,7 +174,7 @@ export default function Login() {
 
     return (
         <div style={gaya.latarBelakang}>
-            <div style={gaya.kartu}>
+            <div style={gaya.kartu} className="responsive-login-card">
                 <h2 style={gaya.judul}>{modeMasuk ? "Masuk" : "Daftar Akun Aslab"}</h2>
                 <p style={gaya.subjudul}>{modeMasuk ? "Portal terintegrasi Cloud Database." : "Registrasi pendaftar baru."}</p>
 

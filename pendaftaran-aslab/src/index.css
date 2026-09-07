@@ -109,3 +109,43 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+/* --- Kelas Responsif Tambahan --- */
+/* Layout Dashboard utama */
+.responsive-layout {
+  /* Di-handle oleh inline style di desktop, di-override di mobile */
+}
+
+@media (max-width: 768px) {
+  .responsive-layout {
+    flex-direction: column !important;
+  }
+  
+  .responsive-sidebar {
+    width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #262626 !important;
+  }
+  
+  .responsive-content-wrapper {
+    padding: 20px 15px !important;
+  }
+  
+  .responsive-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Membentang penuh di PC */
+.responsive-content-wrapper {
+  max-width: 100% !important;
+  width: 100%;
+}
+
+/* Responsif untuk Login Card */
+@media (max-width: 480px) {
+  .responsive-login-card {
+    padding: 25px !important;
+    width: 90% !important;
+  }
+}
